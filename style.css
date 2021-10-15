@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 100%;
+  min-height: 100vh;
+
+  background-image: url(image/mountainforbackground.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4% 10%;
+  font-size: large;
+  font-family: sans-serif;
+}
+nav img {
+  width: 140px;
+}
+
+.link {
+  flex: 1;
+  text-align: right;
+}
+.link ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 6px 14px;
+}
+.link ul li a{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+}
+.link ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: blue;
+  display: block;
+  margin: 2px;
+  transition: 0.5s;
+}
+
+.link ul li:hover::after {
+        width: 100px;
+
+  }
