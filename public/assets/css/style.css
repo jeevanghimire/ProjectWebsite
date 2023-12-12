@@ -244,10 +244,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background: url("../img/hero-bg.jpeg") top right no-repeat;
   background-size: cover;
-  position: relative;
+  position: calc(100vh - 60px);
 }
+/*
+make photo central when width is min 992
+*/
 @media (min-width: 992px) {
   #hero {
+    padding-left: calc((100% - 960px) / 2);
+    height: 100%;
+    width: 100%;
     padding-left: 160px;
   }
 }
